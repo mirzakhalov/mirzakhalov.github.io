@@ -1,0 +1,133 @@
+/* This is a comment in CSS */
+
+/* The first part of a stylesheet is a "reset" to fix undesirable default behaviour */
+
+body {
+    width: 500px;
+    margin: 0 auto;
+}
+
+header, section, main, nav {
+    display: block;
+}
+
+header:after, section:after, main:after, nav:after {
+    content: " "; /* 1 */
+    display: block; /* 2 */
+    clear: both;
+}
+
+/* Once the fixes are done, we can get to the actual styles */
+
+html {
+    font-family: Geneva, Helvetica, Arial, sans-serif;
+    color: #383838;
+    background-color: #F8F8F8;
+}
+
+a {
+    color: #FF0000;
+}
+
+header {
+    background-color: #025839;
+    border-bottom: 5px solid #025839;
+    padding: 10px;
+}
+
+header, header a, header a:visited {
+    color: #EDEDED;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header h1, header nav {
+    text-align: center;
+}
+
+header nav a:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+#banner {
+    text-align: center;
+    margin: 0;
+    background-color: #025839;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+}
+
+.bio {
+    margin-top: 15px;
+    background-color: #D8D8D8;
+    padding: 10px;
+    border-bottom: 5px solid #B0B0B0;
+}
+
+.bio p {
+    margin: 0;
+}
+
+.bio img {
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #A0A0A0;
+}
+
+.bio address {
+    margin-top: 5px;
+    font-style: normal;
+    color: #585858;
+    text-align: center;
+    font-size: 90%;
+}
+
+h2 {
+    color: #025839;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+@media screen and (max-width: 640px) {
+    section {
+        padding: 0 10px;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    #about img {
+        float: left;
+        margin-bottom: 20px;
+}
+}
+
+#about {
+	padding: 100px 0;
+	background: #f6f6f6;
+}
+#about .about-text {
+	margin-left: 10px;
+}
+#about img {
+	float: right;
+}
+#about p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+
